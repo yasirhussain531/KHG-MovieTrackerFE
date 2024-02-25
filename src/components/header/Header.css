@@ -31,4 +31,22 @@ a > span:hover {
 .user__avatar {
     font-size: 2rem;
 }
+.searchInput {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
 
+.searchButton {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.searchButton:hover {
+    background-color: #45a049;
+}
