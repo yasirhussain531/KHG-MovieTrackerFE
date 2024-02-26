@@ -3,18 +3,7 @@ import "./Header.css"
 import { Link } from "react-router-dom"
 import Logo from "../../assets/khg.webp"
 
-const Header = () => {
-    const [searchQuery, setSearchQuery] = useState(""); // State to store the search query
-
-    const handleSearchChange = (event) => {
-        setSearchQuery(event.target.value); // Update the search query state as the user types
-    }
-
-    const handleSearchSubmit = (event) => {
-        event.preventDefault(); // Prevent default form submission behavior
-        // Implement the search functionality here
-        console.log("Search query:", searchQuery);
-    }
+const Header = ( ) => {
 
     return (
         <div className="header">
@@ -25,16 +14,7 @@ const Header = () => {
                 <Link to="/movies/upcoming" style={{textDecoration: "none"}}><span>Upcoming</span></Link>
             </div>
             <div className="headerRight">
-                <form onSubmit={handleSearchSubmit}>
-                    <input 
-                        type="text" 
-                        value={searchQuery} 
-                        onChange={handleSearchChange} 
-                        placeholder="Search movies..." 
-                        className="searchInput" 
-                    />
-                    <button type="submit" className="searchButton">Search</button>
-                </form>
+                    
             </div>
         </div>
     )

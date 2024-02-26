@@ -12,3 +12,8 @@ margin:  2.5rem;
     flex-wrap: wrap ;
     justify-content: center;
 }
+.SearchBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
