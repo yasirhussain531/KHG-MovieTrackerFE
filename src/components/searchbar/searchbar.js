@@ -14,16 +14,22 @@ const SearchBar = ({ onSearch }) => {
 
     return (
         <div>
-            <form onSubmit={handleSearchSubmit}>
-                <input 
-                    type="text" 
-                    value={searchQuery} 
-                    onChange={handleSearchChange} 
-                    placeholder="Search movies..." 
-                    className="searchInput" 
-                />
-                <button type="submit" className="searchButton">Search</button>
-            </form>
+            <div class="wrap">
+                <div class="search">
+                <form onSubmit={handleSearchSubmit}>
+                    <input 
+                        type="text" 
+                        value={searchQuery} 
+                        onChange={handleSearchChange} 
+                        placeholder="What are you looking for?" 
+                        className="searchTerm" 
+                    />
+                        <button type="submit" class="searchButton">
+                            <i class="fa fa-search"></i>
+                        </button>
+                </form>
+                </div>
+            </div>
         </div>
     );
 }
